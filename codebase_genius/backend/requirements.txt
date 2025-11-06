@@ -1,0 +1,6 @@
+jaclang
+GitPython
+tree_sitter
+graphviz
+markdown
+requests
