@@ -1,11 +1,11 @@
-# 🧠 Codebase Genius Assignment 
+# Codebase Genius Assignment 2
 
 **Codebase Genius** is an intelligent documentation and analysis framework that automatically maps, analyzes, and documents software repositories.  
 It extract structure, relationships, and high-impact insights from any codebase—producing developer-ready documentation and visual summaries.
 
 ---
 
-## 🚀 Overview
+## Overview
 
 The system is composed of two main components:
 
@@ -27,13 +27,14 @@ The system is composed of two main components:
 
 ---
 
-## 🧩 Project Structure
+##  Project Structure
 
 ```
 codebase_genius/
 ├── backend/
 │   ├── agents/              # Jac agents handling repo mapping, analysis, and doc generation
 │   ├── py_modules/          # Python helpers for Git, parsing, and visualization
+│   ├── outputs/             # Generated artifacts: diagrams, summaries, logs, and extracted insights
 │   ├── server.jac           # Main Jaseci entrypoint (Supervisor node)
 │   ├── requirements.txt     # Backend dependencies
 ├── frontend/
@@ -43,19 +44,19 @@ codebase_genius/
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.9+
 - [Jaseci](https://github.com/Jaseci-Labs/jaseci)
 - Git
-- pip / virtualenv
+- pip/pip3 / virtualenv
 
 ### Setup
 
 ```bash
 # Clone repository
-git clone https://github.com/<your-username>/codebase_genius.git
+git clone https://github.com/AntonyJosephy/genAiCourse.git
 cd codebase_genius
 
 # Install backend dependencies
@@ -67,7 +68,7 @@ pip install -r frontend/requirements.txt
 
 ---
 
-## ▶️ Usage
+##  Usage
 
 ### Run the Backend (Jaseci)
 ```bash
@@ -85,7 +86,7 @@ Then open your browser at **http://localhost:8501**.
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. **Input:** A GitHub URL.  
 2. **Repo Mapper:** Clones and indexes repository structure.  
@@ -93,11 +94,9 @@ Then open your browser at **http://localhost:8501**.
 4. **Doc Genie:** Generates Markdown summaries.  
 5. **Supervisor:** Aggregates all outputs into a coherent README.
 
-The result is an **auto-generated documentation package** that accelerates onboarding, refactoring, and technical understanding.
-
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 Backend:
 - `jaseci`
@@ -112,6 +111,6 @@ Frontend:
 
 ---
 
-## 💬 Acknowledgements
+##  Acknowledgements
 - [Jaseci Labs](https://jaseci.org/) for the Jac agent framework.    
 - The developer community advancing AI-assisted documentation.
