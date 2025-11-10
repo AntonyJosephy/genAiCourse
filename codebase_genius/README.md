@@ -78,14 +78,13 @@ pip install gitpython tree_sitter jaseci
 # Pre-pin pyarrow to avoid long resolution/ Or use constraints.txt
 pip install "pyarrow==22.0.0"
 # Use contraints.txt
-```bash
-pyarrow==22.0.0
-prompt_toolkit==3.0.51
-pyasn1==0.5.0
-```
-```bash
+`pyarrow==22.0.0`
+`prompt_toolkit==3.0.51`
+`pyasn1==0.5.0`
+
+# pip install with constraints
 pip install -r backend/requirements.txt -r frondend/requirements.txt -c constraints.txt
-```
+
 ```
 ### 2. Clone `tree-sitter-python` grammar:
 ```bash
