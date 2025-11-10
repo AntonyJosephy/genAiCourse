@@ -74,6 +74,10 @@ pip install -r frontend/requirements.txt
 
 # Install runtime dependencies
 pip install gitpython tree_sitter jaseci
+
+# Pre-pin pyarrow to avoid long resolution
+pip install "pyarrow==22.0.0"
+
 ```
 ### 2. Clone `tree-sitter-python` grammar:
 ```bash
@@ -111,15 +115,10 @@ Then open your browser at **http://localhost:8501**.
 ## Dependencies
 
 Backend:
-- `jaseci`
-- `gitpython`
-- `networkx`
-- `pygments`
+`jaseci`, `gitpython`,`networkx`, `pygments`, `pyarrow`
 
 Frontend:
-- `streamlit`
-- `requests`
-- `markdown`
+`streamlit`, `requests`, `markdown`
 
 ---
 
