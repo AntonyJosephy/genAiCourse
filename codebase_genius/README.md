@@ -52,34 +52,46 @@ codebase_genius/
 - Git
 - pip/pip3 / virtualenv
 
-### Setup
+### 1. Install dependencies (Setup)
 
 ```bash
+# Create project directory and navigate into it
+mkdir codebase_genius && cd codebase_genius
+
+# Create and activate virtual environment
+python3 -m venv venv
+venv\Scripts\activate
+
 # Clone repository
 git clone https://github.com/AntonyJosephy/genAiCourse.git
-cd codebase_genius
+cd genAiCourse/codebase_genius
 
 # Install backend dependencies
 pip install -r backend/requirements.txt
 
 # Install frontend dependencies
 pip install -r frontend/requirements.txt
-```
 
+# Install runtime dependencies
+pip install gitpython tree_sitter jaseci
+```
+### 2. Clone `tree-sitter-python` grammar:
+```bash
+git clone https://github.com/tree-sitter/tree-sitter-python vendor/tree-sitter-python
+```
 ---
 
 ##  Usage
 
-### Run the Backend (Jaseci)
+### 3. Start Jaseci and load supervisor (main.jac)
 ```bash
-cd backend
-jac run server.jac
+jaseci serv actions start
+jsctl launch backend/agents/main.jac
 ```
 
 ### Launch Frontend
 ```bash
-cd frontend
-python app.py
+streamlit run frontend/app.py
 ```
 
 Then open your browser at **http://localhost:8501**.
