@@ -79,9 +79,9 @@ pip install gitpython tree_sitter jaseci
 pip install "pyarrow==22.0.0"
 # Use contraints.txt
 ```bash
-`pyarrow==22.0.0`
-`prompt_toolkit==3.0.51`
-`pyasn1==0.5.0
+pyarrow==22.0.0
+prompt_toolkit==3.0.51
+pyasn1==0.5.0
 ```
 ```bash
 pip install -r backend/requirements.txt -r frondend/requirements.txt -c constraints.txt
